@@ -1,0 +1,106 @@
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>meta_profile</title>
+<link href="meta.css" rel="stylesheet" type="text/css" />
+<style>
+	.selected{  color:#FF0000;}
+</style>
+<style>
+body {scrollbar-face-color: #ffffff;
+scrollbar-highlight-color: #c0c0c0;
+scrollbar-3dlight-color: #FFFFFF;
+scrollbar-darkshadow-color: #C0C0C0;
+scrollbar-shadow-color: #ffffff;
+scrollbar-arrow-color: #C0C0C0;
+scrollbar-track-color: #ffffff;}
+</style> 
+</head>
+<body oncontextmenu=self.event.returnValue=false onselectstart="return false" >
+	<dl id="con">	
+	<li>未知级别,请登录交易</li>
+<dt><a href="#" id="KeyId0BG" hidefocus="true" onclick='showHideModel("KeyId0","KeyId0BG")'>个股资讯</a></dt>
+        <dd id="KeyId0"><ul>
+<li><a href="HTTP://WWW.TREEID/14200" hidefocus="true"><font color=#000000>公司报道</font></a></li>
+<li><a href="HTTP://WWW.TREEID/14300" hidefocus="true"><font color=#000000>公司研究</font></a></li>
+<li><a href="HTTP://WWW.TREEID/14400" hidefocus="true"><font color=#000000>个股点评</font></a></li>
+        </ul></dd>
+<dt><a href="#" id="KeyId1BG" hidefocus="true" onclick='showHideModel("KeyId1","KeyId1BG")'>港股及环球市场</a></dt>
+        <dd id="KeyId1"><ul>
+<li><a href="HTTP://WWW.TREEID/14500" hidefocus="true"><font color=#000000>港股动态</font></a></li>
+<li><a href="HTTP://WWW.TREEID/14600" hidefocus="true"><font color=#000000>全球股市</font></a></li>
+<li><a href="HTTP://WWW.TREEID/14700" hidefocus="true"><font color=#000000>黄金外汇</font></a></li>
+        </ul></dd>
+<dt><a href="#" id="KeyId2BG" hidefocus="true" onclick='showHideModel("KeyId2","KeyId2BG")'>投资策略</a></dt>
+        <dd id="KeyId2"><ul>
+<li><a href="HTTP://WWW.TREEID/14800" hidefocus="true"><font color=#000000>证券市场要闻</font></a></li>
+<li><a href="HTTP://WWW.TREEID/14900" hidefocus="true"><font color=#000000>赢家必读</font></a></li>
+<li><a href="HTTP://WWW.TREEID/15000" hidefocus="true"><font color=#000000>大盘分析</font></a></li>
+<li><a href="HTTP://WWW.TREEID/15100" hidefocus="true"><font color=#000000>板块分析</font></a></li>
+<li><a href="HTTP://WWW.TREEID/15200" hidefocus="true"><font color=#000000>数据市集</font></a></li>
+<li><a href="HTTP://WWW.TREEID/15300" hidefocus="true"><font color=#000000>中小企业版</font></a></li>
+<li><a href="HTTP://WWW.TREEID/15400" hidefocus="true"><font color=#000000>三板市场</font></a></li>
+        </ul></dd>
+<dt><a href="#" id="KeyId3BG" hidefocus="true" onclick='showHideModel("KeyId3","KeyId3BG")'>财经新闻</a></dt>
+        <dd id="KeyId3"><ul>
+<li><a href="HTTP://WWW.TREEID/15500" hidefocus="true"><font color=#000000>国内财经</font></a></li>
+<li><a href="HTTP://WWW.TREEID/15600" hidefocus="true"><font color=#000000>国际财经</font></a></li>
+<li><a href="HTTP://WWW.TREEID/15700" hidefocus="true"><font color=#000000>财经时评</font></a></li>
+<li><a href="HTTP://WWW.TREEID/15800" hidefocus="true"><font color=#000000>金融市场</font></a></li>
+<li><a href="HTTP://WWW.TREEID/15900" hidefocus="true"><font color=#000000>时事要闻</font></a></li>
+<li><a href="HTTP://WWW.TREEID/16000" hidefocus="true"><font color=#000000>港澳台财经</font></a></li>
+<li><a href="HTTP://WWW.TREEID/16100" hidefocus="true"><font color=#000000>地方财经</font></a></li>
+        </ul></dd>
+<dt><a href="#" id="KeyId4BG" hidefocus="true" onclick='showHideModel("KeyId4","KeyId4BG")'>行业研究</a></dt>
+        <dd id="KeyId4"><ul>
+<li><a href="HTTP://WWW.TREEID/16200" hidefocus="true"><font color=#000000>行业研究</font></a></li>
+<li><a href="HTTP://WWW.TREEID/16300" hidefocus="true"><font color=#000000>行业动态</font></a></li>
+<li><a href="HTTP://WWW.TREEID/16400" hidefocus="true"><font color=#000000>宏观研究</font></a></li>
+        </ul></dd>
+<dt><a href="#" id="KeyId5BG" hidefocus="true" onclick='showHideModel("KeyId5","KeyId5BG")'>证券学苑</a></dt>
+        <dd id="KeyId5"><ul>
+<li><a href="HTTP://WWW.TREEID/16500" hidefocus="true"><font color=#000000>理论探讨</font></a></li>
+<li><a href="HTTP://WWW.TREEID/16600" hidefocus="true"><font color=#000000>基础知识</font></a></li>
+        </ul></dd>
+
+	</dl>
+</body>
+</html>
+
+
+<script type="text/javascript">
+	function showHideModel(id,id1)
+	{
+    	var a=document.getElementById(id);
+		var b=document.getElementById(id1);
+		var img1="url(meta_close.gif)";
+		var img2="url(meta_open.gif)";
+		if(b.style.backgroundImage==""||b.style.backgroundImage==img1)
+			b.style.backgroundImage=img2;
+		else
+			b.style.backgroundImage=img1;
+    	if(a.style.display=="none")
+        	a.style.display="block";
+   		else
+        	a.style.display="none";
+	}	
+
+	var tds = document.getElementById("con").getElementsByTagName("li");
+	window.onload = function(){
+				for( var i=0; i<tds.length; i++ ){
+					tds[i].onclick = function(){
+						tdonclick(this);
+					}
+				}
+			}
+	function tdonclick(obj){
+				for( var o=0; o<tds.length; o++ ){
+					if( tds[o] == obj ){
+							tds[o].children(0).className = 'selected';
+					}
+					else{
+						tds[o].children(0).className = '';
+					}
+				}
+			}
+</script>
