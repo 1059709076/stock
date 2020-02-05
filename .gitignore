@@ -1,4 +1,5 @@
-*.dat
 *.gif
 cache
 tmp
+dlls
+sound
